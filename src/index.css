@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-mls-bg text-mls-text font-dm antialiased;
+  }
+  h1, h2, h3, h4, h5, h6, .bebas-font {
+    @apply font-bebas tracking-wide;
+  }
+}
+
+@layer utilities {
+  .pulse-dot {
+    @apply w-2.5 h-2.5 rounded-full bg-mls-accent animate-pulse-fast inline-block align-middle;
+    box-shadow: 0 0 8px #95D5B2;
+  }
+}
+
+/* Custom scrollbar for minimalist feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1B4332; 
+}
+::-webkit-scrollbar-thumb {
+  background: #40916C; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #52B788; 
+}
