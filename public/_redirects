@@ -1,0 +1,2 @@
+/api/espn/*  https://site.api.espn.com/:splat  200
+/*    /index.html   200
